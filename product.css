@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #fcbf49;
+    color: #432818;
+    position: relative;
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #432818;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fcbf49;
+}
+
+.content {
+    padding: 50px 10%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.color {
+    padding: 15px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+.product-preview {
+    margin-top: 20px;
+}
+
+.tape-preview {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #555;
+    margin: 10px auto;
+}
+
+#buyNow {
+    padding: 10px 20px;
+    background-color: #fcbf49;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#buyNow:hover {
+    background-color: #ffb347;
+}
+
+footer {
+    background-color: #432818;
+    color: white;
+    padding: 10px;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+}
+
+body.dark nav {
+    background-color: #111;
+}
+
+body.dark .color {
+    border-color: #666;
+}
+
+body.dark header {
+    background-color: #333;
+    color: #fcbf49;
+}
+
+body.dark footer {
+    background-color: #111;
+}
+
+body.dark #darkModeToggle {
+    background-color: #fcbf49;
+    color: #432818;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
